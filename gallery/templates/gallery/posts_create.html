@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Posts{% endblock %}
+{% block content %}
+    <li class="list-group-item list-group-item-warning">
+       <form action="" method="POST">
+  {{form.as_p}}
+  {% csrf_token %}
+  <input type="submit" value="submit">
+</form>
+    </li>
+{% endblock %}
